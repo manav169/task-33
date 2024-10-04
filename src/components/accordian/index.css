@@ -1,0 +1,29 @@
+.accordion-title{
+    font-size: 18px;
+
+    display: flex;
+    justify-content: space-between  ;
+}
+
+.accordion-item{
+    font-size: 16px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.accordion{
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.symbol{
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}

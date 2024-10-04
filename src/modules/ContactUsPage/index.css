@@ -1,0 +1,87 @@
+/* Reset basic margins/paddings and set font styles */
+body {
+    margin: 0;
+    padding: 0;
+    color: #545454;
+    background-color: #fff !important;
+    font-size: 14px;
+    font-family: 'Albert Sans', sans-serif;
+    line-height: 1.6em;
+    letter-spacing: 0px;
+}
+
+/* Background container for the main section */
+.bg-container {
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: inherit;
+    padding-bottom: 130px !important;
+    background: url(https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-2RgmJOxbvBbg-hr-search.png?v=1724402439) no-repeat scroll center center / cover #fff;
+    height: 70vh; /* Adjust height as per design */
+    width: 100%;
+    position: relative;
+}
+
+/* Center the content (h1, div, Search) inside the container */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    font-weight: 600;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.25em;
+    letter-spacing: 0px;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Styling for the subtitle below the h1 */
+.container div {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 0px;
+    color: #fff;
+    margin-top: 10px; /* Space between h1 and div */
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Contact Us Section */
+.contactUs {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card1-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+
+.card2-container{
+  
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    padding: 100px;
+}
