@@ -5,10 +5,10 @@ const ProductDescription: React.FC = () => {
         <div className=''>
 
             <div className=' bg-[#F3F3EF]'>
-                <div className="container mx-auto grid lg:grid-cols-2  items-center p-20 gap-16">
+                <div className="container mx-auto grid lg:grid-cols-2  items-center p-4 lg:p-20 gap-16 py-16">
 
 
-                    <div className='flex flex-col gap-4 max-sm:order-1'>
+                    <div className='flex flex-col gap-4 max-lg:order-1'>
                         <h1 className='text-2xl font-bold'>Drop Duffel</h1>
                         <p>Our first soft duffel bag is crafted from a soft Italian leather. The Egg-shaped charm is a unique decorative element of the Drop Duffel. A roomy cylindrical shape that is perfect for fitting an iPhone Pro Max, a long wallet plus some essentials.</p>
                     </div>
@@ -26,7 +26,7 @@ const ProductDescription: React.FC = () => {
                 </div>
             </div>
             <div className='bg-[#F3F3EF]'>
-                <div className="container mx-auto grid lg:grid-cols-2  items-center p-20 gap-16" >
+                <div className="container mx-auto grid lg:grid-cols-2  items-center p-4 lg:p-20 gap-16" >
 
                     <div>
                         <img src='https://cdn.shopify.com/s/files/1/0623/8303/0317/files/ecom-no-replace-qQDJc9FbraRectangle_5809.png?v=1726820516' className='rounded-2xl' />
