@@ -15,7 +15,7 @@ function App() {
       <Header />
         <Routes>
           <Route  path='/' element={<ContactUs />}/>
-          <Route  path='/contact' element={<Product />}/>
+          <Route  path='/product' element={<Product />}/>
         </Routes>
       </BrowserRouter>
     </>

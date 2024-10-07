@@ -7,8 +7,8 @@ const ProductDetails: React.FC = () => {
   const product = shoppingProducts[0];
 
   return (
-    <div className='mt-20 bg-red-400'> 
-      <div className="container grid grid-cols-2 mx-auto lg:px-20">
+    <div className='pt-20 px-4'> 
+      <div className="container grid lg:grid-cols-2 mx-auto lg:px-20">
         {/* Images Section */}
         <div className="flex flex-col gap-4">
           {product.colors.map((color, index) => (
@@ -22,7 +22,7 @@ const ProductDetails: React.FC = () => {
         </div>
 
         {/* Product Details Section */}
-        <div className='pl-20 ' >
+        <div className='lg:pl-20 max-sm:pt-12' >
           <h1 className="text-2xl font-bold text-black">{product.name}</h1>
           <del className="text-gray-500">${product.originalPrice}</del>
           <p className="text-xl font-semibold text-black">${product.discountedPrice}</p>
