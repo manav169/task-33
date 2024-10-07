@@ -14,9 +14,8 @@ function App() {
       <BrowserRouter>
       <Header />
         <Routes>
-          <Route  path='/' element={<Product />}/>
-          <Route  path='/contact' element={<ContactUs />}/>
-
+          <Route  path='/' element={<ContactUs />}/>
+          <Route  path='/contact' element={<Product />}/>
         </Routes>
       </BrowserRouter>
     </>
