@@ -1,10 +1,13 @@
 import { cardDataType1, cardDataType2 } from "../../data/cardData";
 
-const MyCard = ({ type }) => {
+const MyCard = ({ type }: { type: string}) => {
   const cardData = type === "type1" ? cardDataType1 : cardDataType2;
 
   return (
-    <div className="flex flex-wrap justify-center gap-5 p-5">
+    <div>
+      {
+        type === "type1" ? (
+          <div className="flex flex-wrap justify-center gap-5 p-5">
       {cardData.map((card, index) => (
         <div
           key={index}
@@ -44,6 +47,41 @@ const MyCard = ({ type }) => {
         </div>
       ))}
     </div>
+        ) : (
+          <div className="grid grid-cols-3 gap-5 p-5">
+      {cardData.map((card, index) => (
+        <div
+          key={index}
+          className={`w-[400px]  bg-white border border-gray-300 rounded-lg p-6 shadow-md ${
+            type === "type1" ? "bg-white text-black" : "bg-[#f1f1ff] text-black"
+          }`}
+        >
+          <a className="mb-5" href={card.link}>
+            <figure className="w-12 m-0">
+              <img alt={card.alt} src={card.imgSrc} className="w-full h-auto" />
+            </figure>
+          </a>
+          <div >
+            <h2 className="text-lg font-bold mb-3">{card.title}</h2>
+            <div className="mb-5">
+              <p>{card.description}</p>
+            </div>
+            <div >
+              <a
+                href={card.buttonLink}
+                className="underline hover:text-red-500 text-base"
+              >
+                <span>{card.buttonText}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+        )
+      }
+    </div>
+    
   );
 };
 

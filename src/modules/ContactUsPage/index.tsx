@@ -11,7 +11,7 @@ export const ContactUs = () => {
                      style={{ backgroundImage: "url(https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-2RgmJOxbvBbg-hr-search.png?v=1724402439)" }}>
                 <div className="flex flex-col justify-center items-center text-center">
                     <h1 className="font-semibold text-4xl text-white m-0 p-0">HELP CENTER</h1>
-                    <div className="text-base font-medium mt-2 text-white">Let us know how we may help you?</div>
+                    <div className="text-base font-medium mt-2 text-white mb-8">Let us know how we may help you?</div>
                     <Search />
                 </div>
             </section>
@@ -25,7 +25,8 @@ export const ContactUs = () => {
                 <MyCard type="type2" />
             </section>
 
-            <section>
+            <section className="py-12 px-12 bg-violet-200">
+                <h1 className="text-3xl font-bold text-center py-10">Popular Searched Questions</h1>
                 <Accordian />
             </section>
 
